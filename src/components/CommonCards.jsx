@@ -7,9 +7,9 @@ const CommonCards = ({ values }) => {
         values.height ? values.height : ""
       } relative flex flex-row gap-x-6 pt-2 p-2 px-4 rounded-3xl`}
     >
-      <label className="flex text-[14px] font-bold p-1">{values.label}</label>
+      <label className="flex text-[12px] font-bold p-1">{values.label}</label>
       <p
-        className={`text-xs ${
+        className={`text-[11px] ${
           values.height ? "absolute bottom-2.5" : "absolute bottom-8"
         }  p-1`}
       >
@@ -17,7 +17,7 @@ const CommonCards = ({ values }) => {
       </p>
       {
         <p
-          className={`text-xs ${values.height ? "" : "absolute bottom-4"} p-1`}
+          className={`text-[11px] ${values.height ? "" : "absolute bottom-4"} p-1`}
         >
           {values.Dr ? values.Dr : ""}
         </p>
