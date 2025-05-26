@@ -83,14 +83,14 @@ export const appointmentDetails = [
 
 export const upcomingScheduleDetailsTurs = [
   {
-    label: "Health Checkup Complete", // typo fixed
+    label: "Health Checkup Complete",
     time: "11:00 AM",
     icon: "injection.png",
     class: "w-[400px] bg-blue-900 text-white ",
     height: "h-[70px]",
   },
   {
-    label: "Ophthalmologist", // typo fixed
+    label: "Ophthalmologist",
     time: "2:00 PM",
     icon: "eye.png",
     class: "w-[200px] bg-indigo-200 text-indigo-900 ",

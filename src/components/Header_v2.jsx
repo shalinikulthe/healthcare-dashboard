@@ -1,7 +1,5 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBell, faPlus } from "@fortawesome/free-solid-svg-icons";
-import DashboardMainContent from "../pages/dashboared/DashboardMainContent";
 
 const Header_v2 = () => {
   return (

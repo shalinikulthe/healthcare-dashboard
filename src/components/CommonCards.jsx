@@ -1,5 +1,3 @@
-import React from "react";
-
 const CommonCards = ({ values }) => {
   return (
     <div
@@ -17,7 +15,9 @@ const CommonCards = ({ values }) => {
       </p>
       {
         <p
-          className={`text-[11px] ${values.height ? "" : "absolute bottom-4"} p-1`}
+          className={`text-[11px] ${
+            values.height ? "" : "absolute bottom-4"
+          } p-1`}
         >
           {values.Dr ? values.Dr : ""}
         </p>

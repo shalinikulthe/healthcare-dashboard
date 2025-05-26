@@ -1,6 +1,4 @@
-
-import { chartData,colors } from "../../data/CalenderData";
-
+import { chartData, colors } from "../../data/CalenderData";
 
 const ActivityFeed = () => {
   return (

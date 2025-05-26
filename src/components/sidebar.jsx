@@ -1,7 +1,5 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTachometerAlt,
   faHistory,
   faCalendarAlt,
   faClipboardList,
@@ -27,13 +25,12 @@ const toolsList = [
   { name: "Support", icon: faLifeRing },
 ];
 
-
 export default function Verticalbar() {
   return (
     <div className="h-full relative text-[14px] bg-blue-50  rounded-bl-3xl">
-      <div className=" mx-4 pb-4 flex flex-col gap-1">
-        <span className="pl-8 text-gray-400 text-[11px]">General</span>
-        <ul className="space-y-2 pl-6 text-[12px]">
+      <div className=" mx-12 pb-4 flex flex-col gap-1">
+        <span className="pl-8 text-gray-400 text-[12px]">General</span>
+        <ul className="space-y-2 pl-6 text-[14px]">
           {generalList.map((ittm, index) => {
             return (
               <li
@@ -50,9 +47,9 @@ export default function Verticalbar() {
           })}
         </ul>
       </div>
-      <div className=" mx-4 flex flex-col gap-1 pb-6">
-        <span className="pl-8 text-gray-400 text-[11px]">Tools</span>
-        <ul className="space-y-2 pl-6 text-[12px]">
+      <div className=" mx-12 flex flex-col gap-1 pb-6">
+        <span className="pl-8 text-gray-400 text-[12px]">Tools</span>
+        <ul className="space-y-2 pl-6 text-[14px]">
           {toolsList.map((ittm, index) => {
             return (
               <li
@@ -69,11 +66,8 @@ export default function Verticalbar() {
           })}
         </ul>
       </div>
-      <div className="mx-4 absolute bottom-4 text-[12px]">
-        <FontAwesomeIcon
-          icon={faCog}
-          className=" text-gray-400  pl-8  "
-        />
+      <div className="mx-12 absolute bottom-8 text-[14px]">
+        <FontAwesomeIcon icon={faCog} className=" text-gray-400  pl-8  " />
         <span className="text-gray-600 pl-2">Setting</span>
       </div>
     </div>
