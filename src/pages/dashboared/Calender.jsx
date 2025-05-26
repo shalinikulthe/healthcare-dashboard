@@ -38,10 +38,7 @@ const Calendar = () => {
         {calendarData.map((dayItem, index) => (
           <div key={index} className="space-y-1">
             {dayItem.times.map((slot, i) => (
-              <div
-                key={i}
-                className={`rounded-lg py-1 ${slot.color}`}
-              >
+              <div key={i} className={`rounded-lg py-1 ${slot.color}`}>
                 {slot.time}
               </div>
             ))}

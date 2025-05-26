@@ -114,3 +114,39 @@ export const SaturdatAppDetails = [
     height: "h-[70px]",
   },
 ];
+
+export const cardList = [
+  {
+    label: "Lungs",
+    date: "26 Oct 2021",
+    icon: "red-lungs.avif",
+    progress: 80,
+    color: "bg-red-500",
+  },
+  {
+    label: "Teeth",
+    date: "26 Oct 2021",
+    icon: "tooth.png",
+    progress: 65,
+    color: "bg-green-400",
+  },
+  {
+    label: "Bone",
+    date: "26 Oct 2021",
+    icon: "bone.webp",
+    progress: 40,
+    color: "bg-orange-400",
+  },
+];
+
+export const chartData = [
+  { day: "Mon", bars: [45, 60, 30, 40, 20] },
+  { day: "Tues", bars: [25, 50, 65, 30, 40] },
+  { day: "Wed", bars: [35, 45, 20, 50] },
+  { day: "Thurs", bars: [40, 60, 30, 25, 35] },
+  { day: "Fri", bars: [60, 40, 45, 30] },
+  { day: "Sat", bars: [50, 20, 35, 25] },
+  { day: "Sun", bars: [35, 50, 45, 30] },
+];
+
+export const colors = ["bg-cyan-400", "bg-gray-300", "bg-indigo-500"];

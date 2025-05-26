@@ -5,7 +5,7 @@ import Header_v2 from "./components/Header_v2";
 
 function App() {
   return (
-    <div className="h-[100vh] overflow-hidden w-full bg-blue-100 p-4">
+    <div className="h-[100%] w-full bg-blue-100 p-4">
       <div className="flex flex-col bg-white  rounded-3xl h-full relative">
         <div className="w-full  h-[15%] flex items-center rounded-t-3xl">
           <Header_v2 />

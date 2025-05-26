@@ -1,32 +1,8 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { cardList } from "../../data/CalenderData";
 
 const HealthStatusCards = () => {
-  const cardList = [
-    {
-      label: "Lungs",
-      date: "26 Oct 2021",
-      icon: "red-lungs.avif",
-      progress: 80,
-      color: "bg-red-500",
-    },
-    {
-      label: "Teeth",
-      date: "26 Oct 2021",
-      icon: "tooth.png",
-      progress: 65,
-      color: "bg-green-400",
-    },
-    {
-      label: "Bone",
-      date: "26 Oct 2021",
-      icon: "bone.webp",
-      progress: 40,
-      color: "bg-orange-400",
-    },
-  ];
-
   return (
     <div className="flex gap-3 flex-col">
       {cardList.map((item, index) => (

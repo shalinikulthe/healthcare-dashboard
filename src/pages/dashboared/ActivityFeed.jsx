@@ -1,16 +1,6 @@
-import React from "react";
 
-const chartData = [
-  { day: "Mon", bars: [45, 60, 30, 40, 20] },
-  { day: "Tues", bars: [25, 50, 65, 30, 40] },
-  { day: "Wed", bars: [35, 45, 20, 50] },
-  { day: "Thurs", bars: [40, 60, 30, 25, 35] },
-  { day: "Fri", bars: [60, 40, 45, 30] },
-  { day: "Sat", bars: [50, 20, 35, 25] },
-  { day: "Sun", bars: [35, 50, 45, 30] },
-];
+import { chartData,colors } from "../../data/CalenderData";
 
-const colors = ["bg-cyan-400", "bg-gray-300", "bg-indigo-500"];
 
 const ActivityFeed = () => {
   return (
