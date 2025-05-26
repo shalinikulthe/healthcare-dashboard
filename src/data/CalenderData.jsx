@@ -86,7 +86,7 @@ export const upcomingScheduleDetailsTurs = [
     label: "Health Checkup Complete", // typo fixed
     time: "11:00 AM",
     icon: "injection.png",
-    class: "w-[280px] bg-blue-900 text-white ",
+    class: "w-[400px] bg-blue-900 text-white ",
     height: "h-[70px]",
   },
   {
