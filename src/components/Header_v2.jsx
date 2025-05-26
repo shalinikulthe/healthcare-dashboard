@@ -5,31 +5,31 @@ import DashboardMainContent from "../pages/dashboared/DashboardMainContent";
 
 const Header_v2 = () => {
   return (
-    <div className="flex flex-row justify-between items-center w-full h-full">
-      <div className=" p-4 w-[20%] bg-blue-50 rounded-tl-3xl">
-        <h2 className="px-14 py-5 text-2xl   text-blue-600">Healthcare</h2>
+    <div className="flex justify-between h-full items-center w-full rounded-t-3xl ">
+      <div className=" w-[20%] flex justify-center items-center h-full py-6 bg-blue-50 rounded-tl-3xl">
+        <h2 className="text-[20px] text-cyan-500 font-semibold ">Health<span className="text-blue-800">care</span></h2>
       </div>
-      <div className="w-[40%]">
-        <div className="mx-10 pl-10 px-10 border-2 rounded-md py-1 relative">
+      <div className="w-[40%] bg-white">
+        <div className="mx-10 flex items-center border-2 rounded-md relative">
           <FontAwesomeIcon
             icon={faSearch}
-            className="absolute left-3  top-1/2 transform -translate-y-1/2 text-gray-400"
+            className="absolute left-3 text-[14px] text-gray-400"
           />
-          Search
+          <span className="text-[14px] p-1 pl-10 text-gray-400">Search</span>
           <FontAwesomeIcon
             icon={faBell}
-            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-900"
+            className="absolute right-3 text-blue-900"
           />
         </div>
       </div>
-      <div className="w-[40%] h-[100%] flex items-center justify-end pr-14 rounded-tr-3xl bg-blue-50">
-        <div className="relative flex flex-row gap-2">
+      <div className="w-[40%] flex justify-end pr-14 rounded-tr-3xl bg-blue-50 py-[23px]">
+        <div className="flex gap-x-2 items-center">
           <img
             src="male-face-avatar.avif"
             alt="Male Avatar"
-            className="rounded-md w-[40px] h-[40px] "
+            className="rounded-md w-[32px] h-[32px] "
           />
-          <button className="bg-blue-800 rounded-lg w-[35px] h-[38px] ">
+          <button className="bg-blue-800 rounded-lg w-[28px] h-[30px] ">
             <FontAwesomeIcon icon={faPlus} />
           </button>
         </div>

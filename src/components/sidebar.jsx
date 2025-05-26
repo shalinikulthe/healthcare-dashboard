@@ -10,46 +10,72 @@ import {
   faComments,
   faLifeRing,
   faCog,
+  faTableCellsLarge,
 } from "@fortawesome/free-solid-svg-icons";
 
-const navLinks = [
-  { name: "Dashboard", icon: faTachometerAlt },
+const generalList = [
+  { name: "Dashboard", icon: faTableCellsLarge },
   { name: "History", icon: faHistory },
   { name: "Calendar", icon: faCalendarAlt },
   { name: "Appointments", icon: faClipboardList },
   { name: "Statistics", icon: faChartBar },
   { name: "Tests", icon: faFlask },
+];
+
+const toolsList = [
   { name: "Chat", icon: faComments },
   { name: "Support", icon: faLifeRing },
 ];
 
-const settingLink = { name: "Setting", icon: faCog };
 
 export default function Verticalbar() {
   return (
-    <div className=" h-full bg-blue-50  rounded-bl-3xl">
-      <ul className="space-y-3 pl-10">
-        {navLinks.map((ittm, index) => {
-          return (
-            <li
-              key={index}
-              className="flex items-center space-x-5 rounded-md p-1.5  text-gray-600"
-            >
-              <FontAwesomeIcon icon={ittm.icon} className="  text-gray-400  " />
-              <span>{ittm.name}</span>
-            </li>
-          );
-        })}
-      </ul>
-      <ul className="mt-auto">
-        <li className="mt-24 flex items-center space-x-5 rounded-md p-2">
-          <FontAwesomeIcon
-            icon={settingLink.icon}
-            className="w-5 h-5 text-gray-400  pl-8  "
-          />
-          <span className=" text-gray-600">{settingLink.name}</span>
-        </li>
-      </ul>
+    <div className="h-full relative text-[14px] bg-blue-50  rounded-bl-3xl">
+      <div className=" mx-4 pb-4 flex flex-col gap-1">
+        <span className="pl-8 text-gray-400 text-[11px]">General</span>
+        <ul className="space-y-2 pl-6 text-[12px]">
+          {generalList.map((ittm, index) => {
+            return (
+              <li
+                key={index}
+                className="flex items-center rounded-md p-1  text-gray-600"
+              >
+                <FontAwesomeIcon
+                  icon={ittm.icon}
+                  className=" text-gray-400 px-2"
+                />
+                <span>{ittm.name}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className=" mx-4 flex flex-col gap-1 pb-6">
+        <span className="pl-8 text-gray-400 text-[11px]">Tools</span>
+        <ul className="space-y-2 pl-6 text-[12px]">
+          {toolsList.map((ittm, index) => {
+            return (
+              <li
+                key={index}
+                className="flex items-center rounded-md p-1  text-gray-600"
+              >
+                <FontAwesomeIcon
+                  icon={ittm.icon}
+                  className=" text-gray-400 px-2"
+                />
+                <span>{ittm.name}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className="mx-4 absolute bottom-4 text-[12px]">
+        <FontAwesomeIcon
+          icon={faCog}
+          className=" text-gray-400  pl-8  "
+        />
+        <span className="text-gray-600 pl-2">Setting</span>
+      </div>
     </div>
   );
 }

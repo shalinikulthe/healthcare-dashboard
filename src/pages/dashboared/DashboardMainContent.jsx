@@ -1,4 +1,3 @@
-import React from "react";
 import DashboardOverview from "./DashboardOverview";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";

@@ -3,17 +3,17 @@ import CommonCards from "../../components/CommonCards";
 
 const Calendar = () => {
   return (
-    <div className="px-8 h-[60%] mt-[-30px] bg-blue-50">
+    <div className="px-8 h-[60%] -mt-5 bg-blue-50">
       <div className="flex items-center justify-between ">
-        <h2 className="text-[16px] font-semibold text-gray-800 px-4 py-4">
+        <h2 className="text-[16px] font-semibold text-gray-800 px-4 py-4 ">
           October 2021
         </h2>
-        <div className="space-x-2 text-indigo-600 text-[14px] pr-6">
+        <div className="space-x-2 text-indigo-600 pr-8">
           <span className="cursor-pointer ">&larr;</span>
           <span className="cursor-pointer">&rarr;</span>
         </div>
       </div>
-      <div className="grid grid-cols-7 gap-2 text-center">
+      <div className="grid grid-cols-7 gap-2 text-center ">
         {calendarData.map(({ day }, index) => (
           <div key={index} className="text-xs text-gray-500 font-semibold">
             {day}
@@ -25,7 +25,7 @@ const Calendar = () => {
         {calendarData.map(({ date, day }, index) => (
           <div
             key={index}
-            className={`text-xs py-1 rounded-lg ${
+            className={`text-xs py-2 rounded-lg ${
               day === "Tues" ? "bg-indigo-100 text-indigo-700" : ""
             }`}
           >
@@ -40,7 +40,7 @@ const Calendar = () => {
             {dayItem.times.map((slot, i) => (
               <div
                 key={i}
-                className={`rounded-lg py-0.5 px-2 mx-auto w-fit ${slot.color}`}
+                className={`rounded-lg py-1 ${slot.color}`}
               >
                 {slot.time}
               </div>
@@ -49,7 +49,7 @@ const Calendar = () => {
         ))}
       </div>
 
-      <div className="flex px-2 py-6 gap-x-4">
+      <div className="flex px-2 py-4 gap-x-4">
         {appointmentDetails.map((ittm, index) => (
           <CommonCards key={index} values={ittm} />
         ))}
